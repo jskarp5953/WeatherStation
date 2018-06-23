@@ -228,7 +228,7 @@ def parse(String description) {
 }
 
 def installed() {
-	runEvery3Minutes(poll)
+	runEvery1Minutes(poll)
 }
 
 def uninstalled() {
@@ -237,7 +237,7 @@ def uninstalled() {
 
 def updated() {
 	unschedule()
-    runEvery15Minutes(poll)
+    runEvery1Minutes(poll)
 }
 
 // handle commands
